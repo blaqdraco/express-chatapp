@@ -1,8 +1,10 @@
 {
-  "name": "chatapp",
+  "name": "@chatapp/root",
   "version": "1.0.0",
-  "privayte": true,
+  "private": true,
   "description": "",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
   "scripts": {
     "build": "pnpm -r --workspace-root=false run build",
     "dev": "pnpm -r --workspace-root=false run dev",
