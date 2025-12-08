@@ -7,7 +7,7 @@ type CreateLogger = LoggerOptions & {
 };
 
 export const createLogger = (options?: CreateLogger): pino.Logger => {
-    const { name, ...rest } = options;
+    const { name, ...rest } = options ?? {};
 
     const transport = process.env.NODE_ENV === 'development'   
     ? { 
